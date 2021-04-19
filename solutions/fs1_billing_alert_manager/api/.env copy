@@ -1,0 +1,21 @@
+LOG_LEVEL=debug
+NODE_ENV=develop
+GC_API=https://api.genesiscloud.com
+GC_API_TOKEN=Ec4ytq9ocduHkxqgdNc6h4M2Cq8Ik4sF
+GC_SERVICE=/compute
+GC_API_VERSION=/v1
+
+PORT=4000
+HOST=localhost
+
+EMAIL_SMTP=smtp.gmail.com
+EMAIL_USERNAME="hekuran.islamai@gmail.com"
+EMAIL_PASSWORD="XXXXXXXXXX"
+
+EMAIL_TO=islamaihekuran@gmail.com
+EMAIL_FROM=islamaihekuran@gmail.com
+EMAIL_NAME=Genesis Clooud
+EMAIL_SUBJECT=Threshold
+EMAIL_BODY=
+
+MONGODB_STRING=mongodb+srv://admin:admin@cluster0.4rkcn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

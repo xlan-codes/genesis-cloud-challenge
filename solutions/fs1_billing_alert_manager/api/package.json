@@ -1,0 +1,54 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Genesis Cloud Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env && npm run server:prod",
+    "server:prod": "node index.js",
+    "build": "babel index.js --out-dir build",
+    "clean": "rimraf dist",
+    "server": "cross-env DEBUG=app nodemon --exec babel-node index.js",
+    "dev": "cross-env npm-run-all server",
+    "prod": "npm-run-all clean build",
+    "format": "prettier --write \"./**/*.js\"",
+    "test-dev": "jest"
+  },
+  "author": "Hekuran Islamaj",
+  "license": "ISC",
+  "dependencies": {
+    "agenda": "^4.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-transform-bare-module-specifiers": "^1.0.4",
+    "got": "^11.8.2",
+    "mongoose": "^5.12.2",
+    "nodemailer": "^6.5.0",
+    "regenerator-runtime": "^0.13.7",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.1"
+  },
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.1.3"
+  }
+}
